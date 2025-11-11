@@ -1,0 +1,306 @@
+& when (@media-common = true) {
+    .customer-account-login {
+        .page-main > .page-title-wrapper .page-title {
+            display: none;
+        }
+    }
+
+    .login-container {
+        color: #636363;
+        border: 1px solid #a1a1a1;
+        border-radius: 5px;
+        padding: 30px 20px;
+        margin-top: 40px;
+
+        .block .block-title {
+            .lib-font-size(27);
+            border-bottom: none;
+            text-align: center;
+            color: @color-black;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+
+        .fieldset.login {
+            margin-top: 25px;
+
+            &:after {
+                margin-top: 20px;
+            }
+
+            > .field {
+                margin-bottom: 30px;
+
+                > .label {
+                    margin-bottom: 0;
+                }
+
+                .input-text {
+                    border-width: 0 0 1px 0;
+                    padding: 0;
+                    border-radius: 0;
+                    color: #636363;
+                }
+
+                &.password {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .actions-toolbar > .primary {
+            width: 100%;
+
+            .action {
+                width: 100%;
+                display: block;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0;
+                .lib-font-size(20);
+                font-family: @font-family__sans-serif;
+                height: 50px;
+            }
+        }
+
+        .block-customer-login {
+            .bottom-actions {
+                float: left;
+                width: 100%;
+                margin-bottom: 30px;
+
+                .choice {
+                    float: left;
+
+                    label {
+                        color: #636363;
+                    }
+                }
+
+                .remind {
+                    float: right;
+                    color: #636363;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: @color-black;
+                    }
+                }
+            }
+        }
+
+        .block-new-customer {
+            .sub-headding {
+                .lib-font-size(20);
+                color: @color-black;
+                margin-bottom: 5px;
+            }
+        }
+
+        .member-benefits {
+            padding-top: 40px;
+
+            .benefit {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px solid #c8c8c8;
+                padding: 20px 0;
+                align-items: center;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            .img {
+                width: 70px;
+            }
+
+            .info {
+                padding-left: 20px;
+                max-width: ~'calc(100% - 70px)';
+                box-sizing: border-box;
+
+                p {
+                    margin-bottom: 2px;
+                }
+
+                .head {
+                    color: @color-black;
+                    .lib-font-size(17);
+                }
+            }
+        }
+    }
+
+    .customer-account-create {
+        .create.account {
+            margin-bottom: 20px;
+        }
+
+        .account .legend > span {
+            font-weight: normal;
+            color: @color-black;
+        }
+
+        .info .field.choice {
+            display: none;
+        }
+
+        .fieldset.additional_info {
+            margin-bottom: 20px;
+        }
+    }
+
+    .form-create-account .fieldset.create.account:after,
+    .form.password.forget .fieldset:after {
+        margin-top: 10px;
+    }
+
+    .customer-account-create,
+    .customer-account-forgotpassword {
+        .page-title-wrapper .page-title {
+            font-weight: bold;
+        }
+
+        .column.main {
+            color: #636363;
+
+            .fieldset > .field input {
+                color: #636363;
+            }
+
+            .actions-toolbar > .primary {
+                display: block;
+                width: 100%;
+
+                .action {
+                    text-transform: uppercase;
+                    .lib-font-size(16);
+                    font-family: @font-family__sans-serif;
+                    height: 45px;
+                    margin-right: 0;
+                    width: 100%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .customer-account-create,
+    .block-customer-login {
+        .modal-facebook,
+        .modal-google {
+            width: 250px;
+        }
+    }
+
+    .account {
+        .order-details-items .product-item-name {
+            .lib-font-size(16);
+        }
+
+        .box-order-shipping-method {
+            #delivery-date,
+            #delivery-comment {
+                display: none;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .login-container {
+        padding: 40px 35px;
+        border-radius: 10px;
+
+        .block .block-title {
+            .lib-font-size(32);
+        }
+
+        .block-customer-login {
+            border-right: 1px solid #a1a1a1;
+            margin-bottom: 0;
+            padding-right: 35px;
+            box-sizing: border-box;
+            width: 50%;
+
+            .fieldset > .field > .control {
+                width: 100%;
+            }
+        }
+
+        .block-new-customer {
+            width: 50%;
+            padding-left: 35px;
+            box-sizing: border-box;
+
+            .sub-headding {
+                .lib-font-size(27);
+            }
+        }
+    }
+    .customer-account-create {
+        .columns .column.main {
+            padding-bottom: 20px;
+        }
+    }
+    .customer-account-create,
+    .block-customer-login {
+        .modal-facebook,
+        .modal-google {
+            width: 45%;
+        }
+    }
+
+    .customer-account-create,
+    .customer-account-forgotpassword,
+    .customer-account-createpassword {
+        .page-main {
+            max-width: 620px;
+            border: 1px solid #a1a1a1;
+            border-radius: 10px;
+            padding: 30px 30px 10px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+
+            .page-title-wrapper {
+                text-align: center;
+
+                .page-title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .customer-account-create .form.create.account,
+    .customer-account-forgotpassword .form.password.forget,
+    .customer-account-createpassword .form.password.reset {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .account {
+        .order-status {
+            margin-top: 0;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .account .block-collapsible-nav {
+        top: -25px;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .account {
+        .table-wrapper .table:not(.totals):not(.table-comparison) tfoot .mark {
+            width: 60%;
+        }
+    }
+}

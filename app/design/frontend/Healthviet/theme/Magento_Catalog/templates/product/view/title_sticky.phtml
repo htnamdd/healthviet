@@ -1,0 +1,30 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate.FoundThis
+
+/**
+ * Product view template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Description
+ */
+$_product = $block->getProduct();
+?>
+
+<div class="product-title-sticky">
+    <div class="page-main-container">
+        <p class="sku"><?=$_product->getSku()?></p>
+        <?= $block->getBlockHtml('page.main.title') ?>
+        <p class="short-name"><?=$_product->getProductDescName()?></p>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Catalog/js/custom": {}
+        }
+    }
+</script>

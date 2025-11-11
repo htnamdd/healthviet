@@ -1,0 +1,25 @@
+<?php
+
+?>
+<div class="checkout-success">
+    <p><?= __('Thank you for purchasing and trusting VIET HEALTH!') ?></p>
+    <?php if ($block->getOrderId()) : ?>
+        <?php if ($block->getCanViewOrder()) : ?>
+            <p><?= $block->escapeHtml(__('Your order number is: %1.', sprintf('<a href="%s" class="order-number"><strong>#%s</strong></a>', $block->escapeUrl($block->getViewOrderUrl()), $block->getOrderId())), ['a', 'strong']) ?></p>
+        <?php else : ?>
+            <p><?= $block->escapeHtml(__('Your order number is: #%1', $block->getOrderId()), ['span']) ?></p>
+        <?php endif; ?>
+    <?php endif; ?>
+    <p><?= __('We will deliver the goods to you in about 3-7 working days.') ?></p>
+    <?php if ($block->getIsBankTransfer()): ?>
+        <?= $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('healthviet_checkout_qr_code')->toHtml(); ?>
+    <?php endif; ?>
+    <?= $block->getAdditionalInfoHtml() ?>
+
+    <div class="actions-toolbar <?php if ($block->getIsBankTransfer()): ?>center<?php endif; ?>">
+        <div class="primary">
+            <a class="action primary continue"
+               href="<?= $block->escapeUrl($block->getContinueUrl()) ?>"><span><?= $block->escapeHtml(__('Continue Shopping')) ?></span></a>
+        </div>
+    </div>
+</div>

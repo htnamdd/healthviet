@@ -1,0 +1,132 @@
+
+
+    <?php
+               if ($items = $this->getItems()) {
+                $type = 'related';
+                $class = $type;
+
+                $image = 'related_products_list';
+                $title = __('Related Products');
+                $limit = 0;
+                $shuffle = 0;
+                $canItemsAddToCart = true;
+
+                $showCart = true;
+                $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
+                $canItemsAddToCart = false;
+                $visibleCarousel = $this->getRelatedProductsNumberPerView();
+                $isCarousel = false;
+                if ($visibleCarousel < count($items)) {
+                    $isCarousel = true;
+                }
+            }
+
+    ?>
+
+    <?php if ($items->count()):?>
+    <div class="post-relatedproducts">
+    <?php if ($type == 'related' || $type == 'upsell'): ?>
+    <?php if ($type == 'related'): ?>
+    <div class="block <?php /* @escapeNotVerified */ echo $class; ?>" data-mage-init='{"relatedProducts":{"relatedCheckbox":".related.checkbox"}}' data-limit="<?php /* @escapeNotVerified */ echo $limit; ?>" data-shuffle="<?php /* @escapeNotVerified */ echo $shuffle; ?>">
+        <?php else: ?>
+        <div class="block <?php /* @escapeNotVerified */ echo $class; ?>" data-mage-init='{"upsellProducts":{}}' data-limit="<?php /* @escapeNotVerified */ echo $limit; ?>" data-shuffle="<?php /* @escapeNotVerified */ echo $shuffle; ?>">
+            <?php endif; ?>
+            <?php else: ?>
+            <div class="block <?php /* @escapeNotVerified */ echo $class; ?>">
+                <?php endif; ?>
+                <div class="block-title title">
+                    <strong id="block-<?php /* @escapeNotVerified */ echo $class?>-heading" role="heading" aria-level="2"><?php /* @escapeNotVerified */ echo $title; ?></strong>
+                </div>
+                <div class="block-content content" aria-labelledby="block-<?php /* @escapeNotVerified */ echo $class?>-heading">
+                    <div class="products wrapper grid products-grid products-<?php /* @escapeNotVerified */ echo $type; ?>">
+                        <ol class="products list items product-items"
+                            <?php if ($isCarousel): ?>
+                                data-mage-init='{"blogCarousel": {"items": "<?php /* @escapeNotVerified */ echo $visibleCarousel; ?>"}}'
+                            <?php endif; ?>>
+                            <?php $iterator = 1; ?>
+                            <?php foreach ($items as $_item): ?>
+                                <?php $available = ''; ?>
+                                <?php if ($type == 'related' || $type == 'upsell'): ?>
+                                    <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="item product product-item" style="display: none;">' : '</li><li class="item product product-item" style="display: none;">' ?>
+                                <?php else: ?>
+                                    <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
+                                <?php endif; ?>
+                                <div class="product-item-info <?php /* @escapeNotVerified */ echo $available; ?>">
+                                    <?php /* @escapeNotVerified */ echo '<!-- ' . $image . '-->' ?>
+                                    <a href="<?php /* @escapeNotVerified */ echo $this->getProductUrl($_item) ?>" class="product photo product-item-photo">
+                                        <?php echo $this->getImage($_item, $image)->toHtml(); ?>
+                                    </a>
+                                    <?php if ($discountPercent = $_item->getDiscountPercent()): ?>
+                                        <div class="discount-label"><?= $discountPercent ?></div>
+                                    <?php endif; ?>
+
+                                    <div class="product details product-item-details">
+                                        <strong class="product name product-item-name"><a class="product-item-link" title="<?php echo $this->escapeHtml($_item->getName()) ?>" href="<?php /* @escapeNotVerified */ echo $this->getProductUrl($_item) ?>">
+                                                <?php echo $this->escapeHtml($_item->getName()) ?></a>
+                                        </strong>
+
+                                        <div class="short-name">
+                                            <?= $this->escapeHtml($_item->getProductDescName()) ?>
+                                        </div>
+
+                                        <div class="rating-summary">
+                                            <div class="rating-result">
+                                                <span style="width: 100%;"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-grid-bottom">
+                                            <?php /* @escapeNotVerified */ echo $this->getProductPrice($_item); ?>
+
+                                            <?php if ($showCart): ?>
+                                                <div class="product actions product-item-actions">
+                                                    <?php if ($showCart): ?>
+                                                        <div class="actions-primary">
+                                                            <?php if ($_item->isSaleable()): ?>
+                                                                <?php if ($_item->getTypeInstance()->hasRequiredOptions($_item)): ?>
+                                                                    <button class="action tocart primary" data-mage-init='{"redirectUrl": {"url": "<?php /* @escapeNotVerified */ echo $this->getAddToCartUrl($_item) ?>"}}' type="button" title="<?php /* @escapeNotVerified */ echo __('Add to Cart') ?>">
+                                                                        <span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+                                                                    </button>
+                                                                <?php else: ?>
+                                                                    <?php $postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
+                                                                    $postData = $postDataHelper->getPostData($this->getAddToCartUrl($_item), ['product' => $_item->getEntityId()]);
+                                                                    $buyNowUrl = str_replace('checkout/cart/add', 'buynow/cart/add', $this->getAddToCartUrl($_item));
+                                                                    $postDataBuyNow = $postDataHelper->getPostData($buyNowUrl, ['product' => $_item->getEntityId()]);
+                                                                    ?>
+
+                                                                    <button class="buy-now"
+                                                                            data-post='<?= /* @noEscape */ $postDataBuyNow ?>'
+                                                                            type="button">
+                                                                        <span><?= __('Buy Now') ?></span>
+                                                                    </button>
+
+                                                                    <button class="action tocart primary"
+                                                                            data-post='<?php /* @escapeNotVerified */ echo $postData; ?>'
+                                                                            type="button" title="<?php /* @escapeNotVerified */ echo __('Add to Cart') ?>">
+                                                                        <span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+                                                                    </button>
+                                                                <?php endif; ?>
+                                                            <?php else: ?>
+                                                                <?php if ($_item->getIsSalable()): ?>
+                                                                    <div class="stock available"><span><?php /* @escapeNotVerified */ echo __('In stock') ?></span></div>
+                                                                <?php else: ?>
+                                                                    <div class="stock unavailable"><span><?php /* @escapeNotVerified */ echo __('Out of stock') ?></span></div>
+                                                                <?php endif; ?>
+                                                            <?php endif; ?>
+                                                        </div>
+                                                    <?php endif; ?>
+
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php echo($iterator == count($items)+1) ? '</li>' : '' ?>
+                            <?php endforeach ?>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <?php endif;?>
+

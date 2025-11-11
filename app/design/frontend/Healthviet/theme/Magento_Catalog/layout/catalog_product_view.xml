@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="product.attributes.wrapper" remove="true"/>
+        <move element="product.reviews.wrapper" destination="product.info.details.after.wrapper" after="-"/>
+
+        <referenceContainer name="main">
+            <block class="Magento\Catalog\Block\Product\View\Description" name="page.title.sticky" template="Magento_Catalog::product/view/title_sticky.phtml"  before="-"/>
+        </referenceContainer>
+        <move element="page.main.title" destination="page.title.sticky"/>
+        <move element="product.info.overview" destination="product.info.main" before="-"/>
+        <move element="product.info.description.wrapper" destination="main" after="-"/>
+
+        <referenceContainer name="product.info.description.wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="description.heading" template="Magento_PageBuilder::catalog/product/view/section_wrapper.phtml">
+                <arguments>
+                    <argument name="title" translate="true" xsi:type="string">Product information</argument>
+                    <argument name="section_id" xsi:type="string">descriptionHeading</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="product.info.sku">
+            <arguments>
+                <argument name="at_label" translate="true" xsi:type="string">Sku code</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="product.info.media">
+            <container name="product.feature.icons" htmlTag="div" htmlClass="product-feature-icons" after="-">
+                <block class="Magento\Cms\Block\Block" name="product_feature_icons">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">product_feature_icons</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <move element="product.info.stock.sku" destination="product.info.main" after="product.info"/>
+        <move element="product.info.review" destination="product.info.main" after="product.info"/>
+    </body>
+</page>

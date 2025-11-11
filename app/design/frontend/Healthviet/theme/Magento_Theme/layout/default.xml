@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="header.panel" destination="header-wrapper" after="minicart"/>
+        <move element="navigation.sections" destination="header-wrapper" after="logo"/>
+
+        <referenceContainer name="header-wrapper">
+            <container name="header-support" htmlTag="div" htmlClass="header-support" before="top.search">
+                <block class="Magento\Cms\Block\Block" name="header_support">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">header_support</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo-healthviet.jpg</argument>
+                <argument name="logo_width" xsi:type="number">75</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceBlock name="catalog.topnav">
+            <block class="Magento\Cms\Block\Block" name="header_link" after="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">header_link</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="footer_content" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_content</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="register-link" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="store_switcher" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceContainer name="compare-link-wrapper" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+    </body>
+</page>
