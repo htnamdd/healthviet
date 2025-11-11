@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Sales\Block\Adminhtml\Order\Create\Shipping\Address"
+                type="Healthviet\Shipping\Block\Adminhtml\Order\Create\Shipping\Address"/>
+    <preference for="Magento\Sales\Block\Adminhtml\Order\Create\Billing\Address"
+                type="Healthviet\Shipping\Block\Adminhtml\Order\Create\Billing\Address"/>
+
+    <type name="Magento\Sales\Block\Adminhtml\Order\Create\Form\Address">
+        <plugin name="healthviet_shipping_magento_sales_block_adminhtml_order_create_form_address"
+                type="Healthviet\Shipping\Plugin\Magento\Sales\Block\Adminhtml\Order\Create\Form\Address"/>
+    </type>
+</config>

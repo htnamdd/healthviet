@@ -1,0 +1,221 @@
+@theme-red: #8d0027;
+@them-gray: #606164;
+@theme-yellow: #f6e9c6;
+@color-white: #fff;
+
+& when (@media-common = true) {
+    .post-list-container {
+        padding-top: 20px;
+
+        .heading {
+            font-family: Helvetica, sans-serif;
+            color: @theme-red;
+            position: relative;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+
+            h2 {
+                background: @color-white;
+                padding-right: 15px;
+                margin: 0;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.4
+            }
+
+            &:after {
+                content: '';
+                height: 2px;
+                width: 100%;
+                background: @theme-yellow;
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                z-index: -2;
+            }
+        }
+
+        > .items {
+            margin-bottom: 20px;
+
+            .item {
+                display: block;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+                margin: 10px 0 20px;
+                font-size: 14px;
+                color: #333;
+
+                .name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: @theme-red;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+
+                    a:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .item-info {
+                    .img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 15px;
+                        width: 110px;
+
+                        img {
+                            width: 110px;
+                            height: 110px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+
+                        & + .right {
+                            width: ~'calc(100% - 140px)';
+                            display: inline-block;
+                        }
+                    }
+
+
+                    .right {
+                        vertical-align: middle;
+
+                        .address {
+                            margin-bottom: 0;
+
+                            .icon {
+                                display: inline-block;
+                                width: 15px;
+                                height: 18px;
+                                background: url("../Healthviet_CustomerFeedback/images/ic-map.jpg") left top no-repeat;
+                                background-size: 12px auto;
+                                vertical-align: -3px;
+                            }
+                        }
+                    }
+                }
+
+                .item-content {
+                    width: 100%;
+                    padding-top: 25px;
+                    clear: both;
+                    text-align: justify;
+                    font-size: 16px;
+                    max-height: 135px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 6;
+                    line-clamp: 6;
+                }
+            }
+        }
+    }
+
+    .feedback-feedback-view,
+    .doctor-doctor-view {
+        .page-header {
+            margin-bottom: 0;
+        }
+
+        .page-title-wrapper {
+            display: none;
+        }
+    }
+
+    .detail-content {
+        padding-bottom: 20px;
+
+        .left {
+            text-align: center;
+            padding: 0 0 15px;
+        }
+
+        .right {
+            .title {
+                margin: 0 0 10px;
+                font-size: 26px;
+                font-weight: 500;
+            }
+
+            .address {
+                .icon {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url("../Healthviet_CustomerFeedback/images/ic-map.jpg") left top no-repeat;
+                    background-size: 12px auto;
+                    vertical-align: -3px;
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .post-list-container {
+        > .items {
+            display: grid;
+            grid-area: items;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            column-gap: 20px;
+        }
+    }
+
+    .detail-content {
+        padding: 20px 0 30px;
+
+        .left {
+            width: 270px;
+            display: inline-block;
+            vertical-align: top;
+            padding-right: 20px;
+            box-sizing: border-box;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            width: ~'calc(100% - 280px)';
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    .post-list-container {
+        .heading {
+            h2 {
+                font-size: 26px;
+            }
+
+            &:after {
+                bottom: 10px;
+            }
+        }
+
+        > .items {
+            column-gap: 70px;
+            font-size: 16px;
+
+            .item {
+                padding: 25px 25px 20px;
+
+                .name {
+                    font-size: 28px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}

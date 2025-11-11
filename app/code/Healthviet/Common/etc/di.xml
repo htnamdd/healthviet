@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Healthviet\Common\Api\Data\CommonResponseInterface" type="Healthviet\Common\Model\Data\CommonResponse"/>
+    <preference for="Healthviet\Common\Api\Data\ErrorInterface" type="Healthviet\Common\Model\Data\Error"/>
+    <preference for="Healthviet\Common\Api\Data\MetaDataInterface" type="Healthviet\Common\Model\Data\MetaData"/>
+    <preference for="Healthviet\Common\Api\Data\OptionInterface" type="Healthviet\Common\Model\Data\Option"/>
+</config>

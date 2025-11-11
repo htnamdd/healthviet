@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add
+				id="Healthviet_Banner::top_level"
+				title="Banner Widget Module"
+				module="Healthviet_Banner"
+				sortOrder="140"
+				parent="Healthviet::Common"
+				resource="Healthviet_Banner::top_level"
+		/>
+		<add
+				id="Healthviet_Banner::slider"
+				title="Slider manager"
+				module="Healthviet_Banner"
+				action="healthviet_banner/slider/index"
+				sortOrder="10"
+				parent="Healthviet_Banner::top_level"
+				resource="Healthviet_Banner::slider"
+		/>
+	</menu>
+</config>

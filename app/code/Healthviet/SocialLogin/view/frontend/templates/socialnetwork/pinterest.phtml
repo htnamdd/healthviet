@@ -1,0 +1,20 @@
+<?php if ($block->isPinterestEnabled()): ?>
+    <div class="modal-pinterest"></div>
+<?php endif; ?>
+
+
+<script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-pinterest').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Pinterest', 600, 600);
+                    }
+                });
+            })
+        })
+
+</script>
+

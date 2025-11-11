@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="healthviet_shipping_magento_checkout_block_checkout_layoutprocessor"
+                type="Healthviet\Shipping\Plugin\Magento\Checkout\Block\Checkout\LayoutProcessor"/>
+    </type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="healthviet_shipping_magento_checkout_model_shippinginformationmanagement"
+                type="Healthviet\Shipping\Plugin\Magento\Checkout\Model\ShippingInformationManagement"/>
+    </type>
+    <type name="Magento\Quote\Model\BillingAddressManagement">
+        <plugin disabled="false" name="healthviet_shipping_magento_quote_model_billingaddressmanagement"
+                sortOrder="10" type="Healthviet\Shipping\Plugin\Magento\Quote\Model\BillingAddressManagement"/>
+    </type>
+    <type name="Magento\Checkout\Block\Checkout\DirectoryDataProcessor">
+        <plugin name="healthviet_shipping_magento_checkout_block_checkout_directorydataprocessor"
+                type="Healthviet\Shipping\Plugin\Magento\Checkout\Block\Checkout\DirectoryDataProcessor"/>
+    </type>
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="healthviet_shipping_magento_sales_api_orderrepositoryinterface"
+                type="Healthviet\Shipping\Plugin\Magento\Sales\Api\OrderRepositoryInterface"/>
+    </type>
+</config>

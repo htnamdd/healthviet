@@ -1,0 +1,37 @@
+{
+    "directory_country_region": {
+        "column": {
+            "1d_id": true
+        }
+    },
+    "directory_region_district": {
+        "column": {
+            "district_id": true,
+            "region_id": true,
+            "default_name": true,
+            "1d_id": true
+        },
+        "index": {
+            "DIRECTORY_REGION_DISTRICT_DEFAULT_NAME": true
+        },
+        "constraint": {
+            "DIR_REGION_DISTRICT_REGION_ID_DIR_COUNTRY_REGION_REGION_ID": true,
+            "PRIMARY": true
+        }
+    },
+    "directory_district_ward": {
+        "column": {
+            "ward_id": true,
+            "district_id": true,
+            "default_name": true,
+            "1d_id": true
+        },
+        "index": {
+            "DIRECTORY_DISTRICT_WARD_DEFAULT_NAME": true
+        },
+        "constraint": {
+            "DIR_DISTRICT_WARD_DISTRICT_ID_DIR_REGION_DISTRICT_DISTRICT_ID": true,
+            "PRIMARY": true
+        }
+    }
+}

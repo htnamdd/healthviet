@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/widgets.xsd">
+    <widget id="healthviet_customer_feedback_list" class="Healthviet\CustomerFeedback\Block\Widget\CustomerFeedbackList">
+        <label>Customer Feedbacks List</label>
+        <description>List Of Customer Feedbacks</description>
+        <parameters>
+            <parameter name="widget_status" xsi:type="select" visible="true" sort_order="1" source_model="Magento\Config\Model\Config\Source\Enabledisable">
+                <label translate="true">Status</label>
+                <description translate="true">Enable/Disable widget</description>
+            </parameter>
+            <parameter name="title" xsi:type="text" required="true">
+                <label>Title</label>
+            </parameter>
+            <parameter name="show_pager" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Display Page Control</label>
+            </parameter>
+            <parameter name="feedbacks_per_page" xsi:type="text" required="true" visible="true">
+                <label translate="true">Number of Feedbacks per Page</label>
+                <depends>
+                    <parameter name="show_pager" value="1" />
+                </depends>
+                <value>3</value>
+            </parameter>
+            <parameter name="feedback_amount" xsi:type="text" visible="true">
+                <label translate="true">Feedback amount</label>
+                <description translate="true">Amount of feedbacks to display</description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

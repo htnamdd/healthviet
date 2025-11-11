@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Healthviet_Directory::manage_region" title="Regions Manager">
+                    <resource id="Healthviet_Directory::region_edit" title="Edit" />
+                    <resource id="Healthviet_Directory::region_delete" title="Delete"/>
+                </resource>
+                <resource id="Healthviet_Directory::manage_district" title="Manage District">
+                    <resource id="Healthviet_Directory::district_edit" title="Edit" />
+                    <resource id="Healthviet_Directory::district_delete" title="Delete"/>
+                </resource>
+                <resource id="Healthviet_Directory::manage_ward" title="Manage Ward">
+                    <resource id="Healthviet_Directory::ward_edit" title="Edit" />
+                    <resource id="Healthviet_Directory::ward_delete" title="Delete"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

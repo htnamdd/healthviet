@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="adminhtml_tm_blog_post_edit_tab_meta_prepare_form">
+        <observer name="add_og_field_to_blog_post" instance="Healthviet\OgTags\Observer\Blog\Block\Adminhtml\Post\Edit\Tab\Meta" />
+    </event>
+</config>

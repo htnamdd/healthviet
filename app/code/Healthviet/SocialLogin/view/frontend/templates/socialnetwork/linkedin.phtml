@@ -1,0 +1,19 @@
+<?php if ($block->isLinkedinEnabled()): ?>
+    <div class="modal-linkedin">
+    </div>
+<?php endif; ?>
+<script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-linkedin').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Linkedin', 600, 600);
+                    }
+                });
+            })
+        })
+
+</script>
+

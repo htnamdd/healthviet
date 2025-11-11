@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+    <widget class="Healthviet\Banner\Block\Banner" id="healthviet_banner_widget">
+        <label>Healthviet Banner Section Widget</label>
+        <description>Healthviet Banner Section Widget</description>
+        <parameters>
+            <parameter name="section_type" xsi:type="select" visible="true" source_model="Healthviet\Banner\Model\Source\Banner\SectionType">
+                <label translate="true">Section Type</label>
+            </parameter>
+            <parameter name="slider_code" xsi:type="select" visible="true" source_model="Healthviet\Banner\Model\Source\Banner\SliderCode">
+                <label translate="true">Static Slider Source</label>
+                <depends>
+                    <parameter name="section_type" value="static-banner"/>
+                </depends>
+            </parameter>
+            <parameter name="enable_ajax" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enable Ajax</label>
+            </parameter>
+            <parameter name="enable_utm_tracking" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enable UTM Tracking</label>
+            </parameter>
+            <parameter name="utm_tracking_link" xsi:type="text" required="true" visible="true">
+                <label translate="true">UTM tracking link</label>
+                <depends>
+                    <parameter name="enable_utm_tracking" value="1"/>
+                </depends>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

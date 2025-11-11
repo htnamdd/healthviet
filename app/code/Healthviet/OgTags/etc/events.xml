@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="blog_post_save_after">
+        <observer name="healthviet_og_blog_post_save_before" instance="Healthviet\OgTags\Observer\Blog\Adminhtml\BlogPostSaveAfter" />
+    </event>
+    <event name="blog_post_load_after">
+        <observer name="healthviet_og_blog_post_load_after" instance="Healthviet\OgTags\Observer\Blog\Adminhtml\BlogPostLoadAfter" />
+    </event>
+</config>

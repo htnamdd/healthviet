@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Healthviet::Common"
+            module="Healthviet_Common"
+            resource="Healthviet_Common::content"
+            sortOrder="9999"
+            title="Healthviet"/>
+        <add id="Healthviet_Blog::top_level"
+             title="Blog Management"
+             module="Healthviet_Blog"
+             sortOrder="140"
+             parent="Healthviet::Common"
+             resource="Healthviet_Blog::top_level"
+        />
+        <add id="Healthviet_Blog::category" title="Categories" module="Healthviet_Blog" sortOrder="0"
+             parent="Healthviet_Blog::top_level" action="tm_blog/category/" resource="Healthviet_Blog::category"/>
+        <add id="Healthviet_Blog::post" title="Posts" module="Healthviet_Blog" sortOrder="0" parent="Healthviet_Blog::top_level"
+             action="tm_blog/post/" resource="Healthviet_Blog::post"/>
+        <add id="Healthviet_Blog::comment" title="Comments" module="Healthviet_Blog" sortOrder="0"
+             parent="Healthviet_Blog::top_level" action="tm_blog/comment/" resource="Healthviet_Blog::comment"/>
+    </menu>
+</config>

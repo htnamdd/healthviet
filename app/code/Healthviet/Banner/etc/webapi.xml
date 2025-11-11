@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route method="GET" url="/V2/web/banners-of-slider">
+        <service class="Healthviet\Banner\Api\BannerManagementInterface"
+                 method="getBySlider"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route method="GET" url="/V2/web/banners-of-cat">
+        <service class="Healthviet\Banner\Api\BannerManagementInterface"
+                 method="getByCategory"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route method="GET" url="/V1/homepage-filter-list">
+        <service class="Healthviet\Banner\Api\BannerManagementInterface"
+                 method="getHomepageFilterList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
+
+

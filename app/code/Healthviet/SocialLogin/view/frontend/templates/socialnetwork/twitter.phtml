@@ -1,0 +1,20 @@
+<?php if ($block->isTwitterEnabled()): ?>
+    <div class="modal-twitter"></div>
+<?php endif; ?>
+
+
+<script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-twitter').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Twitter', 600, 600);
+                    }
+                });
+            })
+        })
+
+</script>
+

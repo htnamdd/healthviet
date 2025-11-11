@@ -1,0 +1,43 @@
+<?php
+/**
+ * @var \Healthviet\Banner\Block\Banner $block
+ */
+$banners = $block->getCollection();
+$enable_utm_tracking = $block->getConfig('enable_utm_tracking');
+$utm_tracking_link = $enable_utm_tracking ? $block->getConfig('utm_tracking_link') : '';
+$sectionId = "section_banner_block_slide_" . str_replace(['.', ' '], "", microtime());
+$commonHelper = $this->helper('\Healthviet\Common\Helper\Data');
+?>
+
+<div id="<?= $sectionId ?>"  class="slide-banner banner-widget-section">
+    <?php foreach ($banners as $banner): ?>
+        <a class="link" href="<?= $banner['url_redirect'] ?  $banner['url_redirect'] . $utm_tracking_link : '#' ?>"
+            target="<?= $banner['target']?>" tabindex="-1">
+            <picture>
+                <?php if (isset($banner['mobile_image'])): ?>
+                    <source media="(max-width:767px)" srcset="<?= $banner['mobile_image'] ?>">
+                <?php endif; ?>
+                <img class="banner-img" src="<?= $banner['image'] ?>" alt="<?= $banner['alt_text'] ?>">
+            </picture>
+        </a>
+
+    <?php endforeach; ?>
+</div>
+
+<script type="text/javascript">
+    require(['jquery', 'slick'], function ($) {
+        $(function () {
+            $('<?='#' . $sectionId?>').slick(
+            {
+                autoplay: true,
+                infinite: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 400,
+                dots: true,
+            });
+        })
+    });
+</script>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Healthviet\Banner\Api\BannerManagementInterface" type="Healthviet\Banner\Model\BannerManagement"/>
+	<preference for="Healthviet\Banner\Api\Request\BannerRequestInterface" type="Healthviet\Banner\Model\Request\BannerRequest"/>
+	<preference for="Healthviet\Banner\Api\BannerRepositoryInterface" type="Healthviet\Banner\Model\BannerRepository"/>
+	<preference for="Healthviet\Banner\Api\Data\BannerInterface" type="Healthviet\Banner\Model\Data\Banner"/>
+	<preference for="Healthviet\Banner\Api\Data\BannerSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Healthviet\Banner\Model\ResourceModel\Banner\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">healthviet_banner_banner</argument>
+			<argument name="resourceModel" xsi:type="string">Healthviet\Banner\Model\ResourceModel\Banner\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="healthviet_banner_banner_listing_data_source" xsi:type="string">Healthviet\Banner\Model\ResourceModel\Banner\Grid\Collection</item>
+				<item name="healthviet_banner_slider_listing_data_source" xsi:type="string">Healthviet\Banner\Model\ResourceModel\Slider\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+	<preference for="Healthviet\Banner\Api\SliderRepositoryInterface" type="Healthviet\Banner\Model\SliderRepository"/>
+	<preference for="Healthviet\Banner\Api\Data\SliderInterface" type="Healthviet\Banner\Model\Data\Slider"/>
+	<preference for="Healthviet\Banner\Api\Data\SliderSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Healthviet\Banner\Model\ResourceModel\Slider\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">healthviet_banner_slider</argument>
+			<argument name="resourceModel" xsi:type="string">Healthviet\Banner\Model\ResourceModel\Slider\Collection</argument>
+		</arguments>
+	</virtualType>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Healthviet_Directory::directory" title="Directory" translate="title" module="Healthviet_Directory" sortOrder="80" parent="Magento_Backend::stores" resource="Healthviet_Directory::manage_region"/>
+        <add id="Healthviet_Directory::region" title="Manage Regions" module="Healthviet_Directory" sortOrder="10" parent="Healthviet_Directory::directory" action="healthviet_directory/region" resource="Healthviet_Directory::manage_region"/>
+        <add id="Healthviet_Directory::district" sortOrder="20" title="Manage Districts" module="Healthviet_Directory"
+             parent="Healthviet_Directory::directory" resource="Healthviet_Directory::manage_district" translate="title"
+             action="healthviet_directory/district/index"/>
+        <add id="Healthviet_Directory::manage_ward" sortOrder="30" title="Manage Wards" module="Healthviet_Directory"
+             parent="Healthviet_Directory::directory" resource="Healthviet_Directory::manage_ward" translate="title"
+             action="healthviet_directory/ward/index"/>
+    </menu>
+</config>

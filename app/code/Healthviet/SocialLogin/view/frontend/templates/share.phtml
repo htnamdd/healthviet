@@ -1,0 +1,34 @@
+<?php if ($block->isShareEnabled()): ?>
+    <span class="share" style="font-weight: bold; font-size: 15px">
+        <?php echo __('Share this on your social network'); ?>
+    </span>
+    <script type="text/javascript" async defer src="http://assets.pinterest.com/js/pinit.js"></script>
+    <script>
+        require([
+            'jquery',
+            'hideshare'
+        ], function ($) {
+            'use strict';
+            $(".product-info-main .share").hideshare({
+                link: document.URL,
+                title: "",
+                media: "",
+                decription: "",
+                facebook: true,
+                twitter: true,
+                pinterest: false,
+                googleplus: true,
+                linkedin: false,
+                position: "bottom",
+                speed: 50
+            });
+        });
+    </script>
+    <ul class="hideshare-list">
+        <li>
+            <a href="https://www.pinterest.com/pin/create/button/" data-pin-custom="true">
+                <div class="pinterest-share"></div>
+            </a>
+        </li>
+    </ul>
+<?php endif; ?>

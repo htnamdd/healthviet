@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">region_form.region_form_data_source</item>
+        </item>
+        <item name="label" xsi:type="string" translate="true">General Information</item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+    <settings>
+        <buttons>
+            <button name="save_and_continue" class="Healthviet\Directory\Block\Adminhtml\Edit\SaveAndContinueButton"/>
+            <button name="save" class="Healthviet\Directory\Block\Adminhtml\Edit\SaveButton"/>
+            <button name="delete" class="Healthviet\Directory\Block\Adminhtml\Edit\Region\DeleteButton"/>
+            <button name="back" class="Healthviet\Directory\Block\Adminhtml\Edit\BackButton"/>
+        </buttons>
+        <namespace>region_form</namespace>
+        <dataScope>data</dataScope>
+        <deps>
+            <dep>region_form.region_form_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="region_form_data_source">
+        <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+        <settings>
+            <submitUrl path="healthviet_directory/region/save"/>
+        </settings>
+        <dataProvider class="Healthviet\Directory\Model\Region\DataProvider" name="region_form_data_source">
+            <settings>
+                <requestFieldName>region_id</requestFieldName>
+                <primaryFieldName>region_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <fieldset name="general">
+        <settings>
+            <label/>
+        </settings>
+        <field name="region_id" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">region</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <visible>false</visible>
+                <dataScope>region_id</dataScope>
+            </settings>
+        </field>
+        <field name="default_name" sortOrder="10" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">region</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Region name</label>
+                <dataScope>default_name</dataScope>
+            </settings>
+        </field>
+        <field name="code" sortOrder="20" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">region</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Code</label>
+                <dataScope>code</dataScope>
+            </settings>
+        </field>
+        <field name="country_id" sortOrder="30" formElement="select">
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Country</label>
+                <dataScope>country_id</dataScope>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options class="Magento\Config\Model\Config\Source\Locale\Country"/>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+        <field name="1d_id" sortOrder="40" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">region</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">1Digital_ID</label>
+                <dataScope>1d_id</dataScope>
+            </settings>
+        </field>
+    </fieldset>
+</form>

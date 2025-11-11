@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="healthviet" translate="label" sortOrder="200">
+            <label>Healthviet</label>
+        </tab>
+        <section id="healthviet" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="0"
+                 showInStore="0">
+            <class>separator-top</class>
+            <label>Social Login</label>
+            <tab>healthviet</tab>
+            <resource>Healthviet_SocialLogin::config_sociallogin</resource>
+
+            <group id="line" translate="label" type="text" sortOrder="96" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Line</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="reddit" translate="label" type="text" sortOrder="99" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Reddit</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="amazon" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Amazon</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="google" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Google+</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="healthviet_fblogin_facebook" translate="label" type="text" sortOrder="20" showInDefault="1"
+                   showInWebsite="0" showInStore="0">
+                <label>Facebook</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Facebook App ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Facebook App Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="twitter" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Twitter</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                    <comment></comment>
+                    <tooltip></tooltip>
+                </field>
+            </group>
+
+            <group id="instagram" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Instagram</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="linkedin" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Linkedin</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="pinterest" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Pinterest</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Client ID</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="client_secret" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Client Secret</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="redirect_uri" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Redirect Uri</label>
+                    <frontend_model>Healthviet\SocialLogin\Model\Config\Config</frontend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                    <attribute type="readonly">readonly</attribute>
+                </field>
+            </group>
+
+            <group id="share" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Enable Sharing</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="social_enabled_create_account" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Enable In Create Account</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="social_enabled_modal" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Enable Popup</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="social_enabled_checkout" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Enable In Checkout</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

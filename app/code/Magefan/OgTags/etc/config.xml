@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magefan (support@magefan.com). All rights reserved.
+ * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mfogt>
+            <general>
+                <enabled>0</enabled>
+                <mfmodule>OgTags</mfmodule>
+                <fbappid/>
+                <use_og_meta_tag_for>cms_page,category,product,blog_category,healthviet_blog_post</use_og_meta_tag_for>
+                <description/>
+            </general>
+        </mfogt>
+
+        <system>
+            <media_storage_configuration>
+                <allowed_resources>
+                    <media_gallery_image_folders>
+                        <magefan_og>magefan_og</magefan_og>
+                    </media_gallery_image_folders>
+                </allowed_resources>
+            </media_storage_configuration>
+        </system>
+    </default>
+</config>

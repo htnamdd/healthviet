@@ -1,0 +1,13 @@
+<?php $helper = $this->helper('Healthviet\SocialLogin\Helper\SocialLogin'); ?>
+<?php if($helper->isButtonEnabledCreateAccount()) : ?>
+<div class="s-network">
+	<span><?= __('OR')?></span>
+</div>
+<div class="create"><?=__('Create account with')?></div>
+<div class="btn-snetwork">
+<?php
+
+echo $block->getChildHtml('', true);
+?>
+</div>
+<?php endif ?>

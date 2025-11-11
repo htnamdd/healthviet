@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <healthviet_general>
+            <general>
+                <types_allow>jpg,jpeg,png,gif,pdf</types_allow>
+                <maximum_size_allow>2048</maximum_size_allow>
+            </general>
+        </healthviet_general>
+    </default>
+</config>

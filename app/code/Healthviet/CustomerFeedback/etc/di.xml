@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Healthviet\CustomerFeedback\Api\CustomerFeedbackRepositoryInterface" type="Healthviet\CustomerFeedback\Model\CustomerFeedbackRepository"/>
+	<preference for="Healthviet\CustomerFeedback\Api\Data\CustomerFeedbackInterface" type="Healthviet\CustomerFeedback\Model\CustomerFeedback"/>
+	<preference for="Healthviet\CustomerFeedback\Api\Data\CustomerFeedbackSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Healthviet\CustomerFeedback\Model\ResourceModel\CustomerFeedback\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">healthviet_customerfeedback_customerfeedback</argument>
+			<argument name="resourceModel" xsi:type="string">Healthviet\CustomerFeedback\Model\ResourceModel\CustomerFeedback\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="healthviet_customerfeedback_customerfeedback_listing_data_source" xsi:type="string">Healthviet\CustomerFeedback\Model\ResourceModel\CustomerFeedback\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

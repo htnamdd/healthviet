@@ -1,0 +1,21 @@
+{
+    "healthviet_customerfeedback_customerfeedback": {
+        "column": {
+            "customerfeedback_id": true,
+            "name": true,
+            "avatar": true,
+            "address": true,
+            "experience": true,
+            "content": true,
+            "enable": true,
+            "created_at": true,
+            "updated_at": true,
+            "identifier": true,
+            "meta_keywords": true,
+            "meta_description": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

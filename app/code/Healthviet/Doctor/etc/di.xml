@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Healthviet\Doctor\Api\DoctorRepositoryInterface" type="Healthviet\Doctor\Model\DoctorRepository"/>
+	<preference for="Healthviet\Doctor\Api\Data\DoctorInterface" type="Healthviet\Doctor\Model\Doctor"/>
+	<preference for="Healthviet\Doctor\Api\Data\DoctorSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Healthviet\Doctor\Model\ResourceModel\Doctor\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">healthviet_doctor_doctor</argument>
+			<argument name="resourceModel" xsi:type="string">Healthviet\Doctor\Model\ResourceModel\Doctor\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="healthviet_doctor_doctor_listing_data_source" xsi:type="string">Healthviet\Doctor\Model\ResourceModel\Doctor\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

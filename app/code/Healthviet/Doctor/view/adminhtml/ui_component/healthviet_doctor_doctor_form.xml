@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+	<argument name="data" xsi:type="array">
+		<item name="js_config" xsi:type="array">
+			<item name="provider" xsi:type="string">healthviet_doctor_doctor_form.doctor_form_data_source</item>
+		</item>
+		<item name="label" xsi:type="string" translate="true">General Information</item>
+		<item name="template" xsi:type="string">templates/form/collapsible</item>
+	</argument>
+	<settings>
+		<buttons>
+			<button name="back" class="Healthviet\Doctor\Block\Adminhtml\Doctor\Edit\BackButton"/>
+			<button name="delete" class="Healthviet\Doctor\Block\Adminhtml\Doctor\Edit\DeleteButton"/>
+			<button name="save" class="Healthviet\Doctor\Block\Adminhtml\Doctor\Edit\SaveButton"/>
+			<button name="save_and_continue" class="Healthviet\Doctor\Block\Adminhtml\Doctor\Edit\SaveAndContinueButton"/>
+		</buttons>
+		<namespace>healthviet_doctor_doctor_form</namespace>
+		<dataScope>data</dataScope>
+		<deps>
+			<dep>healthviet_doctor_doctor_form.doctor_form_data_source</dep>
+		</deps>
+	</settings>
+	<dataSource name="doctor_form_data_source">
+		<argument name="data" xsi:type="array">
+			<item name="js_config" xsi:type="array">
+				<item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+			</item>
+		</argument>
+		<settings>
+			<submitUrl path="*/*/save"/>
+		</settings>
+		<dataProvider name="doctor_form_data_source" class="Healthviet\Doctor\Model\Doctor\DataProvider">
+			<settings>
+				<requestFieldName>doctor_id</requestFieldName>
+				<primaryFieldName>doctor_id</primaryFieldName>
+			</settings>
+		</dataProvider>
+	</dataSource>
+	<fieldset name="general">
+		<settings>
+			<label>General</label>
+		</settings>
+        <field formElement="checkbox" name="enable" sortOrder="1">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">Doctor</item>
+                    <item name="default" xsi:type="number">1</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Enable</label>
+                <dataScope>enable</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">false</rule>
+                </validation>
+            </settings>
+            <formElements>
+                <checkbox>
+                    <settings>
+                        <valueMap>
+                            <map name="false" xsi:type="number">0</map>
+                            <map name="true" xsi:type="number">1</map>
+                        </valueMap>
+                        <prefer>toggle</prefer>
+                    </settings>
+                </checkbox>
+            </formElements>
+        </field>
+		<field name="name" formElement="input" sortOrder="10">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">Doctor</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">Name</label>
+				<dataScope>name</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
+        <field name="avatar">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="source" xsi:type="string">Doctor</item>
+                    <item name="label" xsi:type="string" translate="true">Avatar</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="formElement" xsi:type="string">imageUploader</item>
+                    <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
+                    <item name="previewTmpl" xsi:type="string">Healthviet_Common/image-preview</item>
+                    <item name="required" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="number">20</item>
+                    <item name="uploaderConfig" xsi:type="array">
+                        <item name="url" xsi:type="url" path="healthviet_doctor/doctor/uploadavatar"/>
+                    </item>
+                </item>
+            </argument>
+        </field>
+        <field name="identifier" formElement="input" sortOrder="30">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">Doctor</item>
+                    <item name="disabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Url Key</label>
+                <dataScope>identifier</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">false</rule>
+                </validation>
+            </settings>
+        </field>
+		<field name="company" formElement="input" sortOrder="30">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">Doctor</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">Company</label>
+				<dataScope>company</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
+        <field name="meta_keywords">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">Meta Keywords</item>
+                    <item name="componentType" xsi:type="string">field</item>
+                    <item name="formElement" xsi:type="string">textarea</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="dataScope" xsi:type="string">meta_keywords</item>
+                    <item name="rows" xsi:type="number">3</item>
+                    <item name="cols" xsi:type="number">100</item>
+                </item>
+            </argument>
+        </field>
+        <field name="meta_description">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">Meta Description</item>
+                    <item name="componentType" xsi:type="string">field</item>
+                    <item name="formElement" xsi:type="string">textarea</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="dataScope" xsi:type="string">meta_description</item>
+                    <item name="rows" xsi:type="number">3</item>
+                    <item name="cols" xsi:type="number">100</item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+        <field name="content" formElement="wysiwyg" sortOrder="40">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">Doctor</item>
+                    <item name="wysiwygConfigData" xsi:type="array">
+                        <item name="enabled" xsi:type="boolean">true</item>
+                        <item name="config" xsi:type="array">
+                            <item name="height" xsi:type="string">300px</item>
+                            <item name="plugins" xsi:type="array">
+                                <item name="advlist" xsi:type="string">advlist</item>
+                                <item name="autolink" xsi:type="string">autolink</item>
+                                <item name="lists" xsi:type="string">lists</item>
+                                <item name="charmap" xsi:type="string">charmap</item>
+                                <item name="media" xsi:type="string">media</item>
+                                <item name="nonbreaking" xsi:type="string">nonbreaking</item>
+                                <item name="table" xsi:type="string">table</item>
+                                <item name="code" xsi:type="string">code</item>
+                            </item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Content</label>
+                <dataScope>content</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">false</rule>
+                </validation>
+            </settings>
+        </field>
+</form>

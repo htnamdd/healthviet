@@ -1,0 +1,20 @@
+{
+    "healthviet_doctor_doctor": {
+        "column": {
+            "doctor_id": true,
+            "name": true,
+            "company": true,
+            "content": true,
+            "avatar": true,
+            "enable": true,
+            "created_at": true,
+            "updated_at": true,
+            "identifier": true,
+            "meta_keywords": true,
+            "meta_description": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

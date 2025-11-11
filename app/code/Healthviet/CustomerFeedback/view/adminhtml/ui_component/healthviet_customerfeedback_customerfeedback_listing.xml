@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+	<argument name="data" xsi:type="array">
+		<item name="js_config" xsi:type="array">
+			<item name="provider" xsi:type="string">healthviet_customerfeedback_customerfeedback_listing.healthviet_customerfeedback_customerfeedback_listing_data_source</item>
+		</item>
+	</argument>
+	<settings>
+		<spinner>healthviet_customerfeedback_customerfeedback_columns</spinner>
+		<deps>
+			<dep>healthviet_customerfeedback_customerfeedback_listing.healthviet_customerfeedback_customerfeedback_listing_data_source</dep>
+		</deps>
+		<buttons>
+			<button name="add">
+				<url path="*/*/new"/>
+				<class>primary</class>
+				<label translate="true">Add new CustomerFeedback</label>
+			</button>
+		</buttons>
+	</settings>
+	<dataSource name="healthviet_customerfeedback_customerfeedback_listing_data_source" component="Magento_Ui/js/grid/provider">
+		<settings>
+			<storageConfig>
+				<param name="indexField" xsi:type="string">customerfeedback_id</param>
+			</storageConfig>
+			<updateUrl path="mui/index/render"/>
+		</settings>
+		<aclResource>Healthviet_CustomerFeedback::CustomerFeedback</aclResource>
+		<dataProvider name="healthviet_customerfeedback_customerfeedback_listing_data_source" class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+			<settings>
+				<requestFieldName>id</requestFieldName>
+				<primaryFieldName>customerfeedback_id</primaryFieldName>
+			</settings>
+		</dataProvider>
+	</dataSource>
+	<listingToolbar name="listing_top">
+		<settings>
+			<sticky>true</sticky>
+		</settings>
+		<bookmark name="bookmarks"/>
+		<columnsControls name="columns_controls"/>
+		<filters name="listing_filters"/>
+		<paging name="listing_paging"/>
+	</listingToolbar>
+	<columns name="healthviet_customerfeedback_customerfeedback_columns">
+		<settings>
+			<editorConfig>
+				<param name="selectProvider" xsi:type="string">healthviet_customerfeedback_customerfeedback_listing.healthviet_customerfeedback_customerfeedback_listing.healthviet_customerfeedback_customerfeedback_columns.ids</param>
+				<param name="enabled" xsi:type="boolean">true</param>
+				<param name="indexField" xsi:type="string">customerfeedback_id</param>
+				<param name="clientConfig" xsi:type="array">
+					<item name="saveUrl" xsi:type="url" path="healthviet_customerfeedback/CustomerFeedback/inlineEdit"/>
+					<item name="validateBeforeSave" xsi:type="boolean">false</item>
+				</param>
+			</editorConfig>
+			<childDefaults>
+				<param name="fieldAction" xsi:type="array">
+					<item name="provider" xsi:type="string">healthviet_customerfeedback_customerfeedback_listing.healthviet_customerfeedback_customerfeedback_listing.healthviet_customerfeedback_customerfeedback_columns_editor</item>
+					<item name="target" xsi:type="string">startEdit</item>
+					<item name="params" xsi:type="array">
+						<item name="0" xsi:type="string">${ $.$data.rowIndex }</item>
+						<item name="1" xsi:type="boolean">true</item>
+					</item>
+				</param>
+			</childDefaults>
+		</settings>
+		<selectionsColumn name="ids">
+			<settings>
+				<indexField>customerfeedback_id</indexField>
+			</settings>
+		</selectionsColumn>
+		<column name="customerfeedback_id">
+			<settings>
+				<filter>text</filter>
+				<sorting>asc</sorting>
+				<label translate="true">ID</label>
+			</settings>
+		</column>
+        <column name="enable">
+            <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">Healthviet\Banner\Model\Banner\Attribute\Source\ConvertBoolean
+                </item>
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">select</item>
+                    <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                    <item name="sortable" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">select</item>
+                    <item name="sortOrder" xsi:type="number">40</item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/select</item>
+                    <item name="editor" xsi:type="string">select</item>
+                    <item name="label" xsi:type="string" translate="true">Enable</item>
+                </item>
+            </argument>
+        </column>
+		<column name="name">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Name</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+        <column name="avatar" class="Healthviet\CustomerFeedback\Ui\Component\Listing\Column\Avatars">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">Avatar</item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/thumbnail</item>
+                    <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                    <item name="resizeEnabled" xsi:type="boolean">false</item>
+                    <item name="resizeDefaultWidth" xsi:type="string">600</item>
+                </item>
+            </argument>
+        </column>
+		<column name="address">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Address</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+		<column name="experience">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Experience</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+        <actionsColumn name="actions" class="Healthviet\CustomerFeedback\Ui\Component\Listing\Column\CustomerFeedbackActions">
+            <settings>
+                <indexField>customerfeedback_id</indexField>
+                <resizeEnabled>false</resizeEnabled>
+                <resizeDefaultWidth>107</resizeDefaultWidth>
+            </settings>
+        </actionsColumn>
+	</columns>
+</listing>

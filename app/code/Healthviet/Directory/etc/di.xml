@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Healthviet\Directory\Model\ResourceModel\Region\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">directory_country_region</argument>
+            <argument name="eventPrefix" xsi:type="string">directory_country_region_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">region_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Magento\Directory\Model\ResourceModel\Region</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="region_listing_data_source" xsi:type="string">Healthviet\Directory\Model\ResourceModel\Region\Grid\Collection</item>
+                <item xsi:type="string" name="district_listing_data_source">DistrictProvider</item>
+                <item xsi:type="string" name="ward_listing_data_source">WardProvider</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="DistrictProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="resourceModel" xsi:type="string">Healthviet\Directory\Model\ResourceModel\District\Collection</argument>
+            <argument name="mainTable" xsi:type="string">directory_region_district</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="WardProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="resourceModel" xsi:type="string">Healthviet\Directory\Model\ResourceModel\Ward\Collection</argument>
+            <argument name="mainTable" xsi:type="string">directory_district_ward</argument>
+        </arguments>
+    </virtualType>
+</config>

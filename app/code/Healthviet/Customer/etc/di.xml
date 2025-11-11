@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Helper\View">
+        <plugin name="healthviet_customer_view_plugin" type="Healthviet\Customer\Plugin\CustomerViewPlugin"
+                sortOrder="10"/>
+    </type>
+    <type name="Magento\Customer\Model\AttributeMetadataConverter">
+        <plugin name="healthviet_customer_magento_customer_model_attributemetadataconverter" type="Healthviet\Customer\Plugin\Magento\Customer\Model\AttributeMetadataConverter"/>
+    </type>
+    <type name="Magento\Eav\Model\Attribute\Data\Text">
+        <plugin name="healthviet_customer_magento_eav_model_attribute_data_text"
+                type="Healthviet\Customer\Plugin\Magento\Eav\Model\Attribute\Data\Text"/>
+    </type>
+</config>

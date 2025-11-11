@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<config	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <healthviet>
+            <google>
+                <enabled>1</enabled>
+                <client_id>907984647154-7beq3ldrkeu7ofgnohev3irg7q4rq8o3.apps.googleusercontent.com</client_id>
+                <client_secret>T90pesBkcscJHDfo-DQgMowr</client_secret>
+            </google>
+
+            <healthviet_fblogin_facebook>
+                <enabled>1</enabled>
+                <client_id>1195862913759745</client_id>
+                <client_secret>ce78e6d0fdd47c7267793b62d978567f</client_secret>
+            </healthviet_fblogin_facebook>
+
+            <twitter>
+                <enalbed>1</enalbed>
+                <client_id>l1qj3RdtssOCVFJrtXCElTOdb</client_id>
+                <client_secret>4BLQkeSKGimeqYX5kPWhKvKFbWiOA3kKSpypRtKMY8CDnD33cK</client_secret>
+            </twitter>
+
+            <instagram>
+                <enalbed>1</enalbed>
+                <client_id>68a6470b659143cba1e478091f2ba7a0</client_id>
+                <client_secret>24e65d8ad3524dc081ce38c0f48b8d6f</client_secret>
+            </instagram>
+
+            <linkedin>
+                <enalbed>1</enalbed>
+                <client_id>754mu1bbp0z6af</client_id>
+                <client_secret>Odb3mr9sVOdge929</client_secret>
+            </linkedin>
+
+            <pinterest>
+                <enabled>1</enabled>
+                <client_id>4829710923098768589</client_id>
+                <client_secret>1b5d94a69c4d4554783b89715ff2172d2776ac77e7a693cba8d7888a668c1405</client_secret>
+            </pinterest>
+
+            <amazon>
+                <enabled>1</enabled>
+                <client_id>amzn1.application-oa2-client.c79941fec0bb435cba5abad769bde5ed</client_id>
+                <client_secret>f1c8b807b91474f7d68b7ed39bbc1538888c7516dd6f75cbd3c344107bf1c647</client_secret>
+            </amazon>
+
+            <reddit>
+                <enabled>1</enabled>
+                <client_id>P-t0zxHm0p4r-w</client_id>
+                <client_secret>iH8sQK-5zVNkCBXCw6qcDn6XHI4</client_secret>
+            </reddit>
+
+            <line>
+                <enabled>1</enabled>
+                <client_id>1493312259</client_id>
+                <client_secret>a06b0388a9c49b5d3aa69208c6a46908</client_secret>
+            </line>
+            <share>
+                <enabled>1</enabled>
+            </share>
+
+        </healthviet>
+    </default>
+</config>

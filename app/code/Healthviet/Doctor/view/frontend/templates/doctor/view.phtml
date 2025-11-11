@@ -1,0 +1,17 @@
+<?php
+$doctor = $this->getDoctor();
+?>
+<div class="detail-content">
+    <div class="left">
+        <img src="<?= $doctor->getAvatar() ?? 'https://healthviet.com.vn/media/button/image/logo.png' ?>"
+             alt="<?= $doctor->getName() ?>"/>
+    </div>
+    <div class="right">
+        <h2 class="title"><?= $doctor->getName() ?></h2>
+        <p class="address"><span class="icon"></span><?= $doctor->getCompany() ?></p>
+        <p><?= __('Recommended product') ?></p>
+        <div class="ct">
+            <?= $doctor->getContent() ?>
+        </div>
+    </div>
+</div>

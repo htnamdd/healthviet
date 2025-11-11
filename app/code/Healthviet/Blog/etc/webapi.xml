@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route method="GET" url="/V1/news/homepage/list">
+        <service class="Healthviet\Blog\Api\BlogRepositoryInterface"
+                 method="getHomepageNewsList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/V1/news/related/:newsId">
+        <service class="Healthviet\Blog\Api\BlogRepositoryInterface"
+                 method="getRelatedNews"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/V1/news">
+        <service class="Healthviet\Blog\Api\BlogRepositoryInterface"
+                 method="getNews"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="POST" url="/V1/news/comment">
+        <service class="Healthviet\Blog\Api\BlogRepositoryInterface"
+                 method="createComment"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+        <data>
+            <parameter name="customerId" force="true">%customer_id%</parameter>
+        </data>
+    </route>
+</routes>

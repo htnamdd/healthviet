@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="healthviet" translate="label" sortOrder="10">
+            <label>Healthviet</label>
+        </tab>
+        <section id="healthviet_general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>healthviet</tab>
+            <resource>Healthviet_Common::common_general</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>General Configuration</label>
+                <field id="types_allow" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Type of images are allow</label>
+                    <comment>Type of images uploaded will be validate by contents above.</comment>
+                </field>
+                <field id="maximum_size_allow" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Maximum file size allow</label>
+                    <validate>validate-number</validate>
+                    <comment>Set right maximum size allow to file upload. (in kilobyte, for Example: 2048 for allow
+                        maximum 2MB to file).
+                    </comment>
+                </field>
+            </group>
+            <group id="banner" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Images Banner Settings</label>
+                <field id="maximum_width" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Maximum width</label>
+                    <validate>validate-number</validate>
+                    <comment>The maximum resolutions of image can be upload (in pixel)</comment>
+                </field>
+                <field id="maximum_height" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Maximum height</label>
+                    <validate>validate-number</validate>
+                    <comment>The maximum resolutions of image can be upload (in pixel)</comment>
+                </field>
+                <field id="maximum_icon_width" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Maximum icon width</label>
+                    <validate>validate-number</validate>
+                    <comment>The maximum resolutions of image can be upload (in pixel)</comment>
+                </field>
+                <field id="maximum_icon_height" translate="label" type="text" sortOrder="1" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Maximum icon height</label>
+                    <validate>validate-number</validate>
+                    <comment>The maximum resolutions of image can be upload (in pixel)</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
