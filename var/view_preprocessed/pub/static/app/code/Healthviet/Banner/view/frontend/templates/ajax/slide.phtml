@@ -1,0 +1,11 @@
+<?php /** * @var \Healthviet\Banner\Block\Banner $block */ $params = $block->getData(); $params['baseUrl']=$block->getBaseUrl(); $params['enable_ajax'] = 0; $sectionId = "section_banner_ajax_slide_" . str_replace(['.', ' '], "", microtime()); ?> <section id="<?= $sectionId ?>"><div class="banner-widget-section"><div class="slide-banner-placeholder"></div></div></section><script type="text/x-magento-init">
+{
+    "#<?= $sectionId ?>":
+    {
+        "Healthviet_Banner/js/banner":
+        {
+            "sectionId":"<?= $sectionId ?>",
+            "params":<?= json_encode($params) ?>
+        }
+    }
+}</script>

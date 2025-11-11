@@ -1,0 +1,18 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1762801032;s:6:"expire";i:1762887432;s:4:"tags";s:46:"f37_BLOCK_HTML,f37_CAT_P_54,f37_CAT_P,f37_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="54" data-price-box="product-id-54">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+         itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <span  id="product-price-54"                data-price-amount="420000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">420.000 ₫</span></span>
+                <meta itemprop="price" content="420000" />
+        <meta itemprop="priceCurrency" content="VND" />
+    </span>
+
+
+</div>

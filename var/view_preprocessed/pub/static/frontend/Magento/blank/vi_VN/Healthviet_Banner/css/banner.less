@@ -1,0 +1,53 @@
+.slide-banner {
+    margin-bottom: 30px;
+    border-bottom: 3px solid #e9c559;
+
+    a.link {
+        display: block !important;
+
+        .banner-img {
+            width: 100vw;
+        }
+    }
+
+    .slick-dots {
+        padding: 0 5% 0 0;
+        text-align: right;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 20px;
+        @media (max-width: 767px) {
+            bottom: 10px;
+        }
+
+        li {
+            height: 3px;
+            width: 15px;
+
+            button {
+                border: none;
+                border-radius: 0;
+                background: #e9c559;
+                height: 100%;
+                width: 100%;
+            }
+
+            &.slick-active {
+                button {
+                    background: #8c0026;
+                }
+            }
+        }
+    }
+}
+
+.category-banner {
+    margin: 0 0 70px;
+
+    @media (max-width: 767px) {
+
+        &.row {
+            margin-top: -10px;
+        }
+    }
+}

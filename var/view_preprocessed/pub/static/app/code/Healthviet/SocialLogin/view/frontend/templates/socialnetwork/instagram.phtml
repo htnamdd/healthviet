@@ -1,0 +1,12 @@
+<?php if ($block->isInstagramEnabled()): ?> <div class="modal-instagram"></div><?php endif; ?> <script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-instagram').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Instagram', 600, 600);
+                    }
+                });
+            })
+        })</script>

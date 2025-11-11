@@ -1,0 +1,154 @@
+& when (@media-common = true) {
+    a.sociallogin_popup {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    ul.hideshare-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+        }
+    }
+
+    div.facebook-share,
+    div.google-share,
+    div.twitter-share,
+    div.pinterest-share {
+        width: 40px;
+        height: 40px;
+        margin: 3px 5px auto auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    div.facebook-share {
+        background-image: url('../Healthviet_SocialLogin/images/facebook_share.png');
+    }
+
+    div.google-share {
+        background-image: url('../Healthviet_SocialLogin/images/google_share.png');
+    }
+
+    div.twitter-share {
+        background-image: url('../Healthviet_SocialLogin/images/twitter_share.png');
+    }
+
+    div.pinterest-share {
+        background-image: url('../Healthviet_SocialLogin/images/pinterest_share.png');
+    }
+
+    #social_login_buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .s-network {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+
+        &::after {
+            left: 0;
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #c2c2c2;
+            bottom: 25px;
+        }
+
+        span {
+            border: none;
+            padding: 0 20px;
+            background: @color-white;
+            position: relative;
+            z-index: 2;
+        }
+
+        & + .create {
+            text-align: center;
+            margin: 0 0 10px;
+        }
+    }
+
+    .btn-snetwork {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        img {
+            height: 40px;
+        }
+
+    }
+
+    div.modal-amazon,
+    div.modal-facebook,
+    div.modal-google,
+    div.modal-twitter,
+    div.modal-instagram,
+    div.modal-line,
+    div.modal-linkedin,
+    div.modal-reddit,
+    div.modal-pinterest {
+        cursor: pointer;
+        height: 59px;
+        width: 220px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 5px 5px;
+        display: inline-block;
+
+    }
+
+    div.modal-google {
+        background-image: url('../Healthviet_SocialLogin/images/google.jpg');
+    }
+
+    div.modal-facebook {
+        background-image: url('../Healthviet_SocialLogin/images/facebook.jpg');
+    }
+
+    div.modal-twitter {
+        background-image: url('../Healthviet_SocialLogin/images/twitter.jpg');
+    }
+
+    div.modal-amazon {
+        background-image: url('../Healthviet_SocialLogin/images/amazon.jpg');
+    }
+
+    div.modal-instagram {
+        background-image: url('../Healthviet_SocialLogin/images/instagram.jpg');
+    }
+
+    div.modal-pinterest {
+        background-image: url('../Healthviet_SocialLogin/images/pinterest.jpg');
+    }
+
+    div.modal-line {
+        background-image: url('../Healthviet_SocialLogin/images/line.jpg');
+    }
+
+    div.modal-linkedin {
+        background-image: url('../Healthviet_SocialLogin/images/linkedln.jpg');
+    }
+
+    div.modal-reddit {
+        background-image: url('../Healthviet_SocialLogin/images/reddit.jpg');
+    }
+
+    .disabledbutton {
+        pointer-events: none;
+        filter: alpha(opacity=40);
+        -moz-opacity: 0.4;
+        opacity: 0.4;
+    }
+}

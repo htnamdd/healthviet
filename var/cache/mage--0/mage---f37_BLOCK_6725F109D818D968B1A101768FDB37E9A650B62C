@@ -1,0 +1,822 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1762800793;s:6:"expire";i:1762887193;s:4:"tags";s:136:"f37_CAT_P,f37_BLOCK_HTML,f37_CAT_P_21,f37_CAT_P_1,f37_CAT_P_55,f37_CAT_P_51,f37_CAT_P_56,f37_CAT_P_22,f37_CAT_P_10,f37_CAT_P_15,f37_MAGE";}
+        <div class="block widget block-products-list grid">
+                    <div class="block-title">
+                <h2>Sản phẩm quan tâm</h2>
+            </div>
+                <div class="block-content">
+            <!-- new_products_content_widget_grid-->            <div class="products-grid grid">
+                <ol class="product-items widget-product-grid">
+                                                                                        <li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/nuoc-hong-sam-nhung-huou-linh-chi-jeong.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-21">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/s/p/sp4.1.jpg"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="N&#x01B0;&#x1EDB;c&#x20;h&#x1ED3;ng&#x20;s&#xE2;m&#x20;n&#x1EA5;m&#x20;th&#x01B0;&#x1EE3;ng&#x20;ho&#xE0;ng&#x20;30&#x20;jeong"/></span>
+</span>
+<style>.product-image-container-21 {
+    width: 400px;
+}
+.product-image-container-21 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-21");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-21  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Nước hồng sâm nấm thượng hoàng 30 jeong"
+                                       href="https://healthviet.com.vn/nuoc-hong-sam-nhung-huou-linh-chi-jeong.html"
+                                       class="product-item-link">
+                                        <h4>Nước hồng sâm nấm thượng hoàng 30 jeong</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>684 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="21" data-price-box="product-id-21">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-21-widget-product-grid"                data-price-amount="550000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">550.000 ₫</span></span>
+        </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                    <div class="stock unavailable">
+                                                                    <span>Tạm hết hàng</span>
+                                                                </div>
+                                                                                                                                                                        </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/an-cung-vuong-hoang-hoan-to-ken.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-1">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/a/n/an-cung-nguu-hoang-hoan-to-ken-03.jpg"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="s&#x1EA3;n&#x20;ph&#x1EA9;m&#x20;An&#x20;cung&#x20;ng&#x01B0;u"/></span>
+</span>
+<style>.product-image-container-1 {
+    width: 400px;
+}
+.product-image-container-1 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-1");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-1  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                            <div class="discount-label">-16%</div>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="An Cung Ngưu Hoàng Hoàn Tổ Kén"
+                                       href="https://healthviet.com.vn/an-cung-vuong-hoang-hoan-to-ken.html"
+                                       class="product-item-link">
+                                        <h4>An Cung Ngưu Hoàng Hoàn Tổ Kén</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>748 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="1" data-price-box="product-id-1">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-1-widget-product-grid"                data-price-amount="3100000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">3.100.000 ₫</span></span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-1-widget-product-grid"                data-price-amount="3700000"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+    ><span class="price">3.700.000 ₫</span></span>
+        </span>
+    </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 1" data-role="tocart-form" data-product-sku="HQ.ANCUNGNGUUTOKEN.01" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/1/"  method="post"
+                                                            id="product_addtocart_form_1">
+                                                            <input type="hidden" name="product"
+                                                                   value="1">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvMS8,">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_1"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/set-4-hop-ngu-coc-va-tra-damtuh-han-quoc.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-55">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/s/h/shampoo_condi_and_mask_2_2.png"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="SET&#x20;QU&#xC0;&#x20;T&#x1EB6;NG&#x20;NG&#x0168;&#x20;C&#x1ED0;C&#x20;V&#xC0;&#x20;TR&#xC0;&#x20;DAMTUH&#x20;H&#xC0;N&#x20;QU&#x1ED0;C"/></span>
+</span>
+<style>.product-image-container-55 {
+    width: 400px;
+}
+.product-image-container-55 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-55");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-55  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="SET QUÀ TẶNG NGŨ CỐC VÀ TRÀ DAMTUH HÀN QUỐC"
+                                       href="https://healthviet.com.vn/set-4-hop-ngu-coc-va-tra-damtuh-han-quoc.html"
+                                       class="product-item-link">
+                                        <h4>SET QUÀ TẶNG NGŨ CỐC VÀ TRÀ DAMTUH HÀN QUỐC</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>3 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="55" data-price-box="product-id-55">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-55-widget-product-grid"                data-price-amount="410000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">410.000 ₫</span></span>
+        </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 55" data-role="tocart-form" data-product-sku="HQ.NGUCOCDAMTUH.01" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/55/"  method="post"
+                                                            id="product_addtocart_form_55">
+                                                            <input type="hidden" name="product"
+                                                                   value="55">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvNTUv">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_55"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/vien-uong-bo-mat-kwangdong.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-51">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/v/i/vien_uong_bo_mat_kwangdong.jpg"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="Vi&#xEA;n&#x20;u&#x1ED1;ng&#x20;b&#x1ED5;&#x20;m&#x1EAF;t&#x20;Kwangdong"/></span>
+</span>
+<style>.product-image-container-51 {
+    width: 400px;
+}
+.product-image-container-51 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-51");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-51  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Viên uống bổ mắt Kwangdong"
+                                       href="https://healthviet.com.vn/vien-uong-bo-mat-kwangdong.html"
+                                       class="product-item-link">
+                                        <h4>Viên uống bổ mắt Kwangdong</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>620 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="51" data-price-box="product-id-51">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-51-widget-product-grid"                data-price-amount="820000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">820.000 ₫</span></span>
+        </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 51" data-role="tocart-form" data-product-sku="HQ.BOMATKWANGDONG.01" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/51/"  method="post"
+                                                            id="product_addtocart_form_51">
+                                                            <input type="hidden" name="product"
+                                                                   value="51">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvNTEv">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_51"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/nuoc-hong-sam-nhung-huou-linh-chi-366-20-goi.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-56">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/h/e/healthviet_nuoc_hong_sam_nhung_huu_linh_chi_70ml_20_goi_1.png"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="N&#x01B0;&#x1EDB;c&#x20;h&#x1ED3;ng&#x20;s&#xE2;m&#x20;nhung&#x20;h&#x01B0;&#x01A1;u&#x20;linh&#x20;chi&#x20;365&#x28;20&#x20;g&#xF3;i&#x29;"/></span>
+</span>
+<style>.product-image-container-56 {
+    width: 400px;
+}
+.product-image-container-56 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-56");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-56  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Nước hồng sâm nhung hươu linh chi 365(20 gói)"
+                                       href="https://healthviet.com.vn/nuoc-hong-sam-nhung-huou-linh-chi-366-20-goi.html"
+                                       class="product-item-link">
+                                        <h4>Nước hồng sâm nhung hươu linh chi 365(20 gói)</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>1 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="56" data-price-box="product-id-56">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-56-widget-product-grid"                data-price-amount="375000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">375.000 ₫</span></span>
+        </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 56" data-role="tocart-form" data-product-sku="HQ.NUOCHONGSAM365.02" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/56/"  method="post"
+                                                            id="product_addtocart_form_56">
+                                                            <input type="hidden" name="product"
+                                                                   value="56">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvNTYv">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_56"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/tra-linh-chi-han-quoc-korea-linh-chi-mushroom-tea.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-22">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/h/e/healthviet_tra_linh_chi_1.jpg"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="Tr&#xE0;&#x20;linh&#x20;chi&#x20;H&#xE0;n&#x20;Qu&#x1ED1;c&#x20;KOREA&#x20;LINGSHI&#x20;MUSHROOM&#x20;TEA"/></span>
+</span>
+<style>.product-image-container-22 {
+    width: 400px;
+}
+.product-image-container-22 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-22");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-22  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                            <div class="discount-label">-30%</div>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Trà linh chi Hàn Quốc KOREA LINGSHI MUSHROOM TEA"
+                                       href="https://healthviet.com.vn/tra-linh-chi-han-quoc-korea-linh-chi-mushroom-tea.html"
+                                       class="product-item-link">
+                                        <h4>Trà linh chi Hàn Quốc KOREA LINGSHI MUSHROOM TEA</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>683 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="22" data-price-box="product-id-22">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-22-widget-product-grid"                data-price-amount="199000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">199.000 ₫</span></span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-22-widget-product-grid"                data-price-amount="285000"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+    ><span class="price">285.000 ₫</span></span>
+        </span>
+    </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 22" data-role="tocart-form" data-product-sku="HQ.TRALINHCHI.01" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/22/"  method="post"
+                                                            id="product_addtocart_form_22">
+                                                            <input type="hidden" name="product"
+                                                                   value="22">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvMjIv">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_22"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/tra-buoi-giam-can-han-quoc-sang-a.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-10">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/t/r/tra-buoi-giam-can-han-quoc-sang-a-01.jpg"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="Tr&#xE0;&#x20;b&#x01B0;&#x1EDF;i&#x20;gi&#x1EA3;m&#x20;c&#xE2;n&#x20;H&#xE0;n&#x20;qu&#x1ED1;c&#x20;SangA"/></span>
+</span>
+<style>.product-image-container-10 {
+    width: 400px;
+}
+.product-image-container-10 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-10");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-10  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Trà bưởi giảm cân Hàn quốc SangA"
+                                       href="https://healthviet.com.vn/tra-buoi-giam-can-han-quoc-sang-a.html"
+                                       class="product-item-link">
+                                        <h4>Trà bưởi giảm cân Hàn quốc SangA</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>712 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10" data-price-box="product-id-10">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-10-widget-product-grid"                data-price-amount="485000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">485.000 ₫</span></span>
+        </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 10" data-role="tocart-form" data-product-sku="HQ.TRABUOIGIAMCAN.01" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/10/"  method="post"
+                                                            id="product_addtocart_form_10">
+                                                            <input type="hidden" name="product"
+                                                                   value="10">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvMTAv">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_10"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                                                                                            </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="https://healthviet.com.vn/nuoc-hong-sam-co-cu-won-ki-sam-han-quoc.html"
+                               class="product-item-photo">
+                                <span class="product-image-container product-image-container-15">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="https://healthviet.com.vn/media/catalog/product/cache/bb9b712e3c84c757999d0cb00a66819e/n/u/nuoc-hong-sam-co-cu-_n-ki-sam-01.jpg"
+            loading="lazy"
+            width="400"
+            height="300"
+            alt="N&#x01B0;&#x1EDB;c&#x20;h&#x1ED3;ng&#x20;s&#xE2;m&#x20;c&#xF3;&#x20;c&#x1EE7;&#x20;WON&#x20;KI&#x20;SAM"/></span>
+</span>
+<style>.product-image-container-15 {
+    width: 400px;
+}
+.product-image-container-15 span.product-image-wrapper {
+    padding-bottom: 75%;
+}</style><script type="text&#x2F;javascript">prodImageContainers = document.querySelectorAll(".product-image-container-15");
+for (var i = 0; i < prodImageContainers.length; i++) {
+    prodImageContainers[i].style.width = "400px";
+}
+prodImageContainersWrappers = document.querySelectorAll(
+    ".product-image-container-15  span.product-image-wrapper"
+);
+for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+    prodImageContainersWrappers[i].style.paddingBottom = "75%";
+}</script>                            </a>
+                                                        <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Nước hồng sâm có củ WON KI SAM"
+                                       href="https://healthviet.com.vn/nuoc-hong-sam-co-cu-won-ki-sam-han-quoc.html"
+                                       class="product-item-link">
+                                        <h4>Nước hồng sâm có củ WON KI SAM</h4>
+                                    </a>
+                                </strong>
+
+                                <div class="short-name">
+                                                                    </div>
+
+                                <div class="rating-summary">
+                                    <div class="rating-result">
+                                        <span style="width: 100%;"></span>
+                                    </div>
+                                    <div class="rating-label rating-number" style="float: right;margin: 0px">
+                                        <span>706 đánh giá</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-grid-bottom">
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="15" data-price-box="product-id-15">
+<span class="prd-price-label">Giá sản phẩm:</span>
+
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-15-widget-product-grid"                data-price-amount="435000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">435.000 ₫</span></span>
+        </span>
+
+
+</div>
+                                                                            <div class="product-item-inner">
+                                            <div class="product-item-actions">
+                                                                                                    <div class="actions-primary">
+                                                                                                                                                                                <form 15" data-role="tocart-form" data-product-sku="HQ.NUOCHONGSAM.01" action="https://healthviet.com.vn/checkout/cart/add/uenc/aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9kb2N0b3IvYmFjLXNpLXBoaWxpcHBlLW1hY2FpcmUtYmVuaC12aWVuLWRhLWtob2EtcXVvYy10ZQ%2C%2C/product/15/"  method="post"
+                                                            id="product_addtocart_form_15">
+                                                            <input type="hidden" name="product"
+                                                                   value="15">
+                                                            <input type="hidden" name="uenc"
+                                                                   value="aHR0cHM6Ly9oZWFsdGh2aWV0LmNvbS52bi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjSE02THk5b1pXRnNkR2gyYVdWMExtTnZiUzUyYmk5a2IyTjBiM0l2WW1GakxYTnBMWEJvYVd4cGNIQmxMVzFoWTJGcGNtVXRZbVZ1YUMxMmFXVnVMV1JoTFd0b2IyRXRjWFZ2WXkxMFpRJTJDJTJDL3Byb2R1Y3QvMTUv">
+                                                            <input name="form_key" type="hidden" value="G7fGC3SvJLFoRnZV" />
+                                                            <button type="submit"
+                                                                    class="buy-now"
+                                                                    data-mage-init='
+                                                                                {
+                                                                                    "Healthviet_BuyNow/js/buy-now": {
+                                                                                        "form": "#product_addtocart_form_15"
+                                                                                    }
+                                                                                }'
+                                                            >
+                                                                <span>Mua ngay</span>
+                                                            </button>
+
+                                                            <button type="submit"
+                                                                    title="Thêm vào giỏ"
+                                                                    class="action tocart primary">
+                                                                <span>Thêm vào giỏ</span>
+                                                            </button>
+                                                            </form>
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        </li>                                    </ol>
+            </div>
+                    </div>
+    </div>
+            <script type="text/x-magento-init">
+            {
+                ".block.widget [data-role=tocart-form]": {
+                    "Magento_Catalog/js/validate-product": {}
+                }
+            }
+        </script>
+    

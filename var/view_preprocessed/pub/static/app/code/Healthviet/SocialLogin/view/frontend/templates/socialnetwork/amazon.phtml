@@ -1,0 +1,12 @@
+<?php if ($block->isAmazonEnabled()): ?> <div class="modal-amazon"></div><?php endif; ?> <script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-amazon').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Amazon', 600, 600);
+                    }
+                });
+            })
+        })</script>

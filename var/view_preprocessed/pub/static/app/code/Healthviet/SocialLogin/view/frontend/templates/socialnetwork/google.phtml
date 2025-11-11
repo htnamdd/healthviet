@@ -1,0 +1,12 @@
+<?php if ($block->isGoogleEnabled()): ?> <div class="modal-google"></div><?php endif; ?> <script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-google').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Google', 600, 600);
+                    }
+                });
+            })
+        })</script>

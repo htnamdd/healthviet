@@ -1,0 +1,12 @@
+<?php if ($block->isLineEnabled()): ?> <div class="modal-line"></div><?php endif; ?> <script>
+    require(['jquery', 'healthvietSocialLogin'],
+        function ($, sociallogin) {
+            $(document).ready(function () {
+                $('.modal-line').bind('click', function () {
+                    var url = '<?= $block->getButtonUrl();?>';
+                    if (url.length) {
+                        sociallogin.display(url, 'Line', 600, 600);
+                    }
+                });
+            })
+        })</script>

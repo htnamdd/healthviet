@@ -1,0 +1,9 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1762800942;s:6:"expire";i:1762804542;s:4:"tags";s:57:"f37_BLOCK_HTML,f37_CAT_C,f37_CAT_C_3,f37_CAT_C_4,f37_MAGE";}
+
+<nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <li  class="level0 nav-1 category-item first level-top"><a href="https://healthviet.com.vn/thuc-pham-chuc-nang-han-quoc.html"  class="level-top" ><span>Thực phẩm chức năng</span></a></li><li  class="level0 nav-2 category-item active level-top parent"><a href="https://healthviet.com.vn/my-pham.html"  class="level-top" ><span>Mỹ Phẩm</span></a><ul class="level0 submenu"><li  class="level1 nav-2-1 category-item first"><a href="https://healthviet.com.vn/my-pham/my-pham-han-quoc.html" ><span>Hàn Quốc</span></a></li><li  class="level1 nav-2-2 category-item last"><a href="https://healthviet.com.vn/my-pham/my-pham-nhat-ban.html" ><span>Nhật Bản</span></a></li></ul></li><li  class="level0 nav-3 last level-top"><a href="https://healthviet.com.vn/blog/"  class="level-top" ><span>Tin tức</span></a></li>        <li class="level0"><a class="level-top" href="https://healthviet.com.vn/trai-nghiem-khach-hang.html">Khách hàng</a></li>
+<li class="level0"><a class="level-top" href="https://healthviet.com.vn/chuyen-gia-danh-gia.html">Chuyên gia</a></li>
+<li class="level0"><a class="level-top" href="https://healthviet.com.vn/gioi-thieu-ve-health-viet.html">Giới thiệu</a></li>
+<li class="level0" style="display: none;"><a class="level-top" href="https://healthviet.com.vn/chinh-sach-cong-ty.html">Chính sách</a></li>    </ul>
+</nav>
