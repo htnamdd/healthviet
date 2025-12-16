@@ -1,0 +1,120 @@
+name: Magento2 CI/CD
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  ci:
+    name: CI - Build & Test
+    runs-on: [self-hosted, magento]
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, intl, bcmath, gd, soap, xsl, zip, pdo_mysql
+          coverage: none
+
+      - name: Setup Composer cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
+      - name: Composer install (no dev)
+        run: |
+          composer install --no-dev --optimize-autoloader
+
+      # Tuỳ chọn: chạy kiểm tra code
+      - name: Run PHP CodeSniffer (optional)
+        if: always()
+        run: |
+          if [ -f vendor/bin/phpcs ]; then
+            vendor/bin/phpcs app/code
+          else
+            echo "PHPCS not installed. Skipping."
+          fi
+
+      # Tuỳ chọn: chạy unit test
+      - name: Run Unit Tests (optional)
+        if: always()
+        run: |
+          if [ -f vendor/bin/phpunit ]; then
+            vendor/bin/phpunit
+          else
+            echo "PHPUnit not installed. Skipping."
+          fi
+
+  cd:
+    name: CD - Deploy to Production
+    needs: ci
+    runs-on: [self-hosted, magento]
+    if: github.ref == 'refs/heads/main'
+
+    env:
+      MAGENTO_DIR: /var/www/healthviet
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, intl, bcmath, gd, soap, xsl, zip, pdo_mysql
+          coverage: none
+
+      - name: Sync code to Magento directory
+        run: |
+          rsync -av --delete \
+            --exclude=".git" \
+            --exclude=".github" \
+            ./ $MAGENTO_DIR/
+
+      - name: Set permissions
+        run: |
+          cd $MAGENTO_DIR
+          find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} \;
+          find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} \;
+          chmod u+x bin/magento
+
+      - name: Put site into maintenance mode
+        run: |
+          cd $MAGENTO_DIR
+          php bin/magento maintenance:enable || true
+
+      - name: Composer install on server (no dev)
+        run: |
+          cd $MAGENTO_DIR
+          composer install --no-dev --optimize-autoloader
+
+      - name: Run Magento upgrade & compile
+        run: |
+          cd $MAGENTO_DIR
+          php bin/magento setup:upgrade
+          php bin/magento setup:di:compile
+
+      - name: Deploy static content
+        run: |
+          cd $MAGENTO_DIR
+          php bin/magento setup:static-content:deploy -f
+
+      - name: Clear cache
+        run: |
+          cd $MAGENTO_DIR
+          php bin/magento cache:flush
+
+      - name: Disable maintenance mode
+        run: |
+          cd $MAGENTO_DIR
+          php bin/magento maintenance:disable
