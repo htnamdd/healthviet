@@ -9,21 +9,14 @@ on:
 jobs:
   ci:
     name: CI - Build & Test
-    runs-on: [self-hosted, magento]
+    runs-on: [self-hosted,healthviet-web]
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
-
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1'
-          extensions: mbstring, intl, bcmath, gd, soap, xsl, zip, pdo_mysql
-          coverage: none
+        uses: htnamdd/checkout@v4
 
       - name: Setup Composer cache
-        uses: actions/cache@v4
+        uses: htnamdd/cache@v4
         with:
           path: ~/.composer/cache
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
@@ -57,7 +50,7 @@ jobs:
   cd:
     name: CD - Deploy to Production
     needs: ci
-    runs-on: [self-hosted, magento]
+    runs-on: [self-hosted, healthviet-web]
     if: github.ref == 'refs/heads/main'
 
     env:
@@ -65,15 +58,8 @@ jobs:
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
-
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1'
-          extensions: mbstring, intl, bcmath, gd, soap, xsl, zip, pdo_mysql
-          coverage: none
-
+        uses: htnamdd/checkout@v4
+        
       - name: Sync code to Magento directory
         run: |
           rsync -av --delete \
