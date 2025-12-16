@@ -50,7 +50,7 @@ jobs:
   cd:
     name: CD - Deploy to Production
     needs: ci
-    runs-on: [self-hosted, magento]
+    runs-on: [self-hosted, healthviet-web]
     if: github.ref == 'refs/heads/main'
 
     env:
