@@ -9,7 +9,7 @@ on:
 jobs:
   ci:
     name: CI - Build & Test
-    runs-on: [self-hosted, magento]
+    runs-on: [self-hosted,healthviet-web]
 
     steps:
       - name: Checkout source
