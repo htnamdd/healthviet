@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Checkout source
-        uses: htnamdd/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Composer cache
-        uses: htnamdd/cache@v4
+        uses: actions/checkout@v4
         with:
           path: ~/.composer/cache
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
@@ -58,7 +58,7 @@ jobs:
 
     steps:
       - name: Checkout source
-        uses: htnamdd/checkout@v4
+        uses: actions/checkout@v4
         
       - name: Sync code to Magento directory
         run: |
