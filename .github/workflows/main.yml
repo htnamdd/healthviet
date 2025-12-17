@@ -31,7 +31,7 @@ jobs:
       - name: Run PHP CodeSniffer (optional)
         if: always()
         run: |
-          if [ -f /usr/bin/phpcs ]; then
+          if [ -f /usr/bin/phpcssssssss ]; then
             /usr/bin/phpcs app/code
           else
             echo "PHPCS not installed. Skipping."
@@ -54,7 +54,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     env:
-      MAGENTO_DIR: /var/www/healthviet
+      MAGENTO_DIR: /var/www/healthviet_run
 
     steps:
       - name: Checkout source
